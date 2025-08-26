@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class EjecutarEstudiante{
     public static void main(String[] args) {
         //creación de los objetos
@@ -23,7 +21,7 @@ public class EjecutarEstudiante{
         objEst1.matricularCursos(cursos1);
         objEst2.matricularCursos(cursos2);
 
-         System.out.println(Arrays.toString(est));
-
+        System.out.println(objEst1);
+        
     }
 }
