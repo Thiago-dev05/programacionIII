@@ -12,15 +12,17 @@ public class OperacionesPila {
             pilaSignos.push(s[i]);
         }
 
-        int tan = pilaSignos.size();
+        int tam = pilaSignos.size();
         int c1 = 0, c2 = 0;
 
         // Recorrer la pila
-        for (int i = 0; i < tan; i++) {
-            if (pilaSignos.pop().equals("(")) {
+        for (int i = 0; i < tam; i++) {
+            if (pilaSignos.peek().equals("(")) {
                 c1 += 1;
             } else
                 c2 += 1;
+
+            pilaSignos.pop();
         }
 
         flag = c1 == c2 ? true : false;
