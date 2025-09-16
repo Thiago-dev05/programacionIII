@@ -4,7 +4,6 @@ public class OperacionesPila {
     Stack<String> pilaSignos;
     
     public boolean validarParentesis(String[] s) {
-        boolean flag = false;
         pilaSignos = new Stack<>();
 
         // Almacenar en la pila el arreglo de signos
@@ -25,8 +24,12 @@ public class OperacionesPila {
             pilaSignos.pop();
         }
 
-        flag = c1 == c2 ? true : false;
-
-        return flag;
+        return c1 == c2 ? true : false;
+        
+        /*
+         * TAREA: Implementar todos los métodos de la clase vector que son estos:
+         * https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html
+         * Realice ejemplos prácticos para su funcionamiento
+         */
     }
 }
