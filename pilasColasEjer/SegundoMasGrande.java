@@ -10,13 +10,13 @@ public class SegundoMasGrande {
    
     public int segundoMasGrande(int[] nums) {
         for (int i = 0; i < nums.length; i++) {
-            cola.add(nums[i]);
+            cola.add(nums[i]); // [10, 20, 30, 40, 50]
         }
         int tam = cola.size();
         for (int i = 0; i < tam; i++) {
             pila.push(cola.poll());
         }
-        pila.pop();
-        return pila.pop();
+        pila.pop(); // [10, 20, 30, 40]
+        return pila.pop(); // 40
     }
 }

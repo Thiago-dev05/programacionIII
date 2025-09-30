@@ -8,8 +8,8 @@ public class Main {
         String[] s2 = {"pan blanco", "tomate", "pan blanco"};
         String[] s3 = {"pan integral", "lechuga", "pan blanco"};
         PanSimilar objPan = new PanSimilar();
-        // System.out.println("Los panes son similares? " + objPan.esPanSimilar(s1, s2));
-        // System.out.println("Los panes son similares? " + objPan.esPanSimilar(s1, s3));
+        System.out.println("Los panes son similares? " + objPan.esPanSimilar(s1, s2));
+        System.out.println("Los panes son similares? " + objPan.esPanSimilar(s1, s3));
 
         // Formatear Número Telefónico
         int[] nums = {1,2,3,4,5,6,7,8,9,0};
