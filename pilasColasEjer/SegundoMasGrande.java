@@ -9,6 +9,11 @@ public class SegundoMasGrande {
    Stack<Integer> pila = new Stack<>();
    
     public int segundoMasGrande(int[] nums) {
+        // validación
+        if (nums == null || nums.length < 2) {
+            return -1;
+        }
+
         for (int i = 0; i < nums.length; i++) {
             cola.add(nums[i]); // [10, 20, 30, 40, 50]
         }

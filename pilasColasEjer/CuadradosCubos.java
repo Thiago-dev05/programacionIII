@@ -23,7 +23,7 @@ public class CuadradosCubos {
         int num1 = pilaNums.pop(); // a
 
         double raizCuadrada = Math.sqrt(num1);
-        double raizCubica   = Math.cbrt(num2);
+        double raizCubica = Math.cbrt(num2);
 
         return Math.abs(raizCuadrada - raizCubica) < 1e-6;
     }
